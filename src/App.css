@@ -1,0 +1,64 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-editors-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.html {
+  flex: 1;
+}
+
+.html textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  font-size: 16px;
+  height: 200px;
+}
+
+.text-editors {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  min-height: 200px;
+}
+
+.text-editors .ql-container {
+  border: none !important;
+}
+
+.text-editors .tox-tinymce {
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.ant-form-item-control-input-content .ant-select,
+.ant-form-item-control-input-content .ant-switch {
+  width: auto !important;
+}
+
+@media (max-width: 768px) {
+  .text-editors-wrapper {
+    flex-direction: column;
+  }
+}
